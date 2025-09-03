@@ -9,7 +9,7 @@ body {
 }
 
 #listasob li {
-    width: 500px;
+    width: 100%;
 }
 .destaque {
     font-size: 1.3em;
@@ -393,13 +393,84 @@ h1 {
 }
 
 .sobre-tec-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 50px;
-    gap: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 50px;
+        gap: 200px;
    
+
+@media (max-width: 900px) {
+    .sobre-tec-container {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    #sobremim {
+        width: 90vw;
+        padding: 10px;
+    }
+    #minhafoto img {
+        width: 180px !important;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    #cabeçalho {
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+    #cabeçalho #amanda {
+        margin-left: 0;
+        font-size: 1.1em;
+    }
+    #sobre h1, #sobre h2, #sobre p {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.2em;
+    }
+    #sobre h1 {
+        font-size: 1.5em;
+    }
+    #perfil {
+        width: 120px !important;
+        margin-left: 0;
+    }
+    #container-cards {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    #projetoa, #projetob, #projetoc, #projetod, #projetoe, #projetof {
+        width: 90vw;
+        margin: 10px 0;
+        padding: 10px;
+    }
+    #tecnologia {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .scroll img {
+        width: 60px;
+        height: 40px;
+    }
+    #footer {
+        font-size: 0.7em;
+        padding: 6px;
+    }
+}
     
 }
 
