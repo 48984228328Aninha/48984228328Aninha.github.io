@@ -1,0 +1,477 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+#listasob li {
+    width: 500px;
+}
+.destaque {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+
+}
+
+.destaque:hover {
+    color: violet;
+    cursor: pointer;
+}
+.container {
+    width: 100%;;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+#sobre {
+    justify-content: center;
+    margin-top: 40px;
+    
+}
+
+.container:hover {
+    padding: 30px;
+    transition: padding 0.3s ease-in-out;
+}
+body {
+    background-image: url('https://images.unsplash.com/photo-1638272181967-7d3772a91265?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG15c3RpYyUyMHB1cnBsZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    cursor: url('./espada-cursor-32x32.png'), auto;
+    backdrop-filter: blur(20px);
+}
+h3 {
+    color: white;
+    font-size: 2em;
+    color: aqua;
+}
+h2 {
+    color: blueviolet;
+    font-size: 2.5em;
+    
+}
+p {
+    color: white;
+    font-size: 1.2em;
+}
+li, ul {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#perfil {
+    border-radius: 50%;
+    width: 300px;
+    margin-top: 3px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+    margin-left: 30%;
+    animation: foto infinite 2s alternate;;
+}
+@keyframes foto {
+    0% {
+        transform-box: ale(0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+#perfil:hover {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transition: transform 0.3s ease-out;
+    box-shadow: rgba(6, 230, 255, 0.5) 0px 4px 8px;
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    
+}
+a:hover {
+    color: blueviolet;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+   
+}
+
+#sobre {
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#sobre p{
+    text-align: justify;
+    line-height: 1.6;
+    margin: 0 12%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#sobre h1 {
+    margin-left: 12%;
+    margin-right: 12%;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    margin-block-end: 3px;
+    background: linear-gradient(90deg, #7f00ff, #1ea9f4); /* roxo para rosa */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+#destaque2 {
+    transition: font-size 0.3s ease-in-out;
+}
+#destaque2:hover {
+    font-size: 3.5rem;
+}
+
+#sobre h2 {
+    margin-left: 12%;
+    margin-right: 12%;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+#ola {
+    display: flex;
+    justify-content: center;
+}
+
+
+#sobre:hover #h1:hover {
+    color: aqua;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+
+h1 {
+    font-size: 3em;
+
+    
+}
+#sobre h2 {
+    margin-left: 12%;
+    margin-right: 12%;
+    color: white;
+    font-size: 2em;
+}
+
+#contato1, #cv {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(6, 197, 255, 0.5);
+    border: none;
+    width: 150px;
+    height: 50px;
+    
+}
+#contato1:hover {
+    background-color: rgb(0, 199, 249);
+    color: rgb(94, 1, 216);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: rgb(57, 196, 255) 5px 5px 5px rgb(6, 255, 243);
+    border: none;
+    filter: brightness(1.2);
+}
+#cabeçalho {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+#cabeçalho #amanda {
+    margin-left: 300px;
+    font-size: 1.5em;
+
+}
+
+#imagem {
+    margin-top: 40px;
+}
+
+#contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+#github {
+    width: 30px;
+    height: 30px;
+   
+}
+
+#linkedin {
+    width: 30px;
+    height: 30px;
+}
+
+#projetos8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#txtprojeto {
+    color: blueviolet;
+    font-size: 4em;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+#txtprojeto:hover {
+    color: aqua;
+    transition: color 0.3s ease-in-out;
+}
+
+#sobre1, #projetos1, #home {
+    border-bottom: 1px solid white;
+    margin-left: 7px;
+    margin-right: 7px;
+    padding-bottom: 10px;
+}
+
+#sobre1:hover, #projetos1:hover, #home:hover {
+    border-bottom: 1px solid blueviolet;
+    transition: border-bottom 0.1s ease-in-out;
+}
+
+#container-cards {
+    display: flex;
+    gap: 20px; /* espaço entre os cards */
+    justify-content: center; /* centraliza os cards */
+    flex-wrap: wrap; /* permite que os cards se movam para a próxima linha se não houver espaço suficiente */
+    flex-direction: row;
+    
+}
+
+
+#projetoa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: rgba(6, 197, 255, 0.5) 0px 4px 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    backface-visibility: hidden;
+    transform: rotateY(0deg);
+}
+
+#projetob, #projetoc, #projetod, #projetoe, #projetof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 300px;
+    text-align: center;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: rgba(6, 197, 255, 0.5) 0px 4px 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(20px);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+#cv {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: blueviolet;
+    border: none;
+    padding: 18px 30px;
+    margin-left: 8px;
+    box-shadow: 5px 5px 5px rgba(6, 197, 255, 0.5);
+    
+ 
+}
+
+#cv:hover {
+    background-color: rgb(0, 199, 249);
+    color: rgb(94, 1, 216);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: rgb(57, 196, 255) 5px 5px 5px rgb(6, 255, 243);
+    border: none;
+    filter: brightness(1.2);
+}
+
+#sobremim {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    justify-content: center;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+
+}
+
+#txtsob {
+    display: flex;
+    justify-content: center;
+    
+}
+#corpo {
+    backdrop-filter: blur(20px);
+    padding-block-end: 300px;
+    margin-top: 30vh;
+    padding-top: 5px;
+    height: 350px;
+    border: none;
+    background: radial-gradient(20px)
+   
+}
+
+#corpo:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s ease-in-out;
+}
+
+#minhafoto {
+    margin-top: 80px;
+}
+
+.sobre-tec-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    gap: 200px;
+   
+    
+}
+
+#crp {
+    color: #7952a1;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.4em;
+    
+}
+
+#tecnologia {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: rgba(6, 197, 255, 0.5) 0px 4px 8px;
+    justify-content: center;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+.scroll {
+    display: flex;
+    width: max-content;
+    
+}
+
+
+
+.scroll img {
+    width: 100px;
+    height: 80px;
+    flex-shrink: 0;
+
+}
+
+.grupo {
+    display: flex;
+}
+
+@keyframes mover {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-1 * var(--scroll-width))); }
+}
+
+
+#tecnologia h2 {
+    display: flex;
+    justify-content: center;
+}
+
+#footer {
+    box-shadow: rgba(0, 0, 0, 0.5) 8px 8px 8px 16px;
+    padding: 10px;
+    flex-direction: row;
+    backdrop-filter: blur(20px);
+    background: linear-gradient(90deg, #7952a1, #53acff); /* roxo para rosa */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.80em;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#footer:hover {
+    padding: 30px;
+    transition: padding 0.3s ease-in-out;
+}
