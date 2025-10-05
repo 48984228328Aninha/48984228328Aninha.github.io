@@ -1,3 +1,25 @@
+#textsob {
+    font-family: 'Cinzel Decorative', 'Spectral', serif;
+    font-size: 2.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #7952a1, #53acff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(83, 172, 255, 0.3);
+    padding: 10px 0 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #53acff;
+    margin-bottom: 18px;
+    
+}
+#textsob:hover {
+    transform: scale(1.10);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -36,7 +58,7 @@ body {
 
 #listasob li {
     width: 100%;
-    width: 450px;
+    width: 600px;
 }
 .destaque {
     font-size: 1.3em;
@@ -57,6 +79,12 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: sticky;  /* faz o header “grudar” no topo */
+    top: 0; 
 }
 
 
@@ -182,6 +210,8 @@ h1 {
 
 #destaque2 {
     transition: font-size 0.3s ease-in-out;
+    font-family: 'Cinzel Decorative', 'Spectral', serif;
+    font-size: 1em;
 }
 #destaque2:hover {
     font-size: 3.5rem;
@@ -285,14 +315,29 @@ h1 {
 
 #txtprojeto {
     color: blueviolet;
-    font-size: 4em;
+    font-size: 3em;
     margin-top: 100px;
     cursor: pointer;
+    font-family: 'Cinzel Decorative', 'Spectral', serif;
+    font-weight: bold;
+    background: linear-gradient(90deg, #7952a1, #53acff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(83, 172, 255, 0.3);
+    border-bottom: 2px solid #53acff;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 #txtprojeto:hover {
     color: aqua;
     transition: color 0.3s ease-in-out;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    
+    
 }
 
 #sobre1, #projetos1, #home {
@@ -335,8 +380,13 @@ h1 {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    backface-visibility: hidden;
-    transform: rotateY(0deg);
+}
+#projetoa:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(6, 230, 255, 0.5) 0px 4px 8px;
+    filter: brightness(1.2);
+    cursor: pointer;
 }
 
 #projetob, #projetoc, #projetod, #projetoe, #projetof {
@@ -357,6 +407,13 @@ h1 {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+}
+#projetob:hover, #projetoc:hover, #projetod:hover, #projetoe:hover, #projetof:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(6, 230, 255, 0.5) 0px 4px 8px;
+    filter: brightness(1.2);
+    cursor: pointer;
 }
 
 
@@ -412,7 +469,7 @@ h1 {
 }
 
 #corpo:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -468,6 +525,20 @@ h1 {
         margin-right: 0;
         font-size: 1.2em;
     }
+    #sobre h1:hover, #sobre h2:hover, #sobre p:hover {
+        opacity: 0;
+        transform: translateX(-100px);
+        animation: entrar 1s ease forwards;
+    }
+        @keyframes entrar {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        
+
+
+    }
     #sobre h1 {
         font-size: 1.5em;
     }
@@ -485,14 +556,16 @@ h1 {
         margin: 10px 0;
         padding: 10px;
     }
-    #tecnologia {
+    #tecnologia html {
         flex-direction: column;
-        height: auto;
+        height: 300px;
         padding: 10px 0;
+        
     }
     .scroll img {
-        width: 60px;
-        height: 40px;
+        width: 90px;
+        height: 90px;
+        
     }
     #footer {
         font-size: 0.7em;
@@ -507,9 +580,19 @@ h1 {
     display: flex;
     justify-content: center;
     margin: 0 auto;
-    font-size: 1.4em;
-    
+    font-size: 1em;
+    font-family: 'Cinzel Decorative', 'Spectral', serif;
+    background: linear-gradient(90deg, #7952a1, #53acff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 8px rgba(83, 172, 255, 0.3);
 }
+    #crp:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    }
 
 #tecnologia {
     display: flex;
@@ -520,9 +603,11 @@ h1 {
     box-shadow: rgba(6, 197, 255, 0.5) 0px 4px 8px;
     justify-content: center;
     height: 100px;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    white-space: nowrap;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
 }
 
 
