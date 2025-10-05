@@ -3,6 +3,32 @@ html {
     overflow-x: hidden;
 }
 
+#MudarCor {
+    padding: 10px 20px;
+    border-top: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(6, 197, 255, 0.5);
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+#MudarCor:hover {
+    background-color: rgb(0, 199, 249);
+    color: rgb(94, 1, 216);
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: rgb(57, 196, 255) 5px 5px 5px rgb(6, 255, 243);
+    border: none;
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
 body {
     overflow-x: hidden;
 
@@ -10,6 +36,7 @@ body {
 
 #listasob li {
     width: 100%;
+    width: 450px;
 }
 .destaque {
     font-size: 1.3em;
@@ -23,8 +50,8 @@ body {
     cursor: pointer;
 }
 .container {
-    width: 100%;;
-    margin: 0 auto;
+    width: 100%;
+    margin-top: 0;
     padding: 20px;
     display: flex;
     justify-content: flex-start;
@@ -204,6 +231,7 @@ h1 {
     border: none;
     width: 150px;
     height: 50px;
+    cursor: pointer;
     
 }
 #contato1:hover {
@@ -220,7 +248,7 @@ h1 {
 }
 
 #cabeçalho #amanda {
-    margin-left: 300px;
+    margin-left: 150px;
     font-size: 1.5em;
 
 }

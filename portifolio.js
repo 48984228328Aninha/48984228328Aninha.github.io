@@ -9,3 +9,17 @@ for (let i = 0; i < images.length / 2; i++) {
 
 // Define a variável CSS para a animação
 scroll.style.setProperty('--scroll-width', `${totalWidth}px`);
+
+function MudarTema() {
+  document.getElementById("MudarCor").onclick = MudarTemaEscuro;
+  document.getElementById("MudarCor").innerHTML = "Versão escura";
+  document.body.style.backgroundImage = "url('escuro.jpg')";
+
+}
+
+function MudarTemaEscuro() {
+  document.getElementById("MudarCor").onclick = MudarTema;
+  document.getElementById("MudarCor").innerHTML = "Versão clara";
+  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1638272181967-7d3772a91265?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG15c3RpYyUyMHB1cnBsZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D')";
+
+}
