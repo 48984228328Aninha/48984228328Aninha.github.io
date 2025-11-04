@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="portifolio.css">
     <script src="portifolio.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+Garamond&family=Spectral:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/progressbar.js"></script>
 
 </head>
 <body>
@@ -15,8 +19,8 @@
     <header class="container">
 
             <div id="cabeçalho">
-            <a href="#home" id="home">Home</a>
-            <a href="#txtsob" id="sobre1">Sobre</a>
+            <a href="#sobre" id="home">Home</a>
+            <a href="#textsob" id="sobre1">Sobre</a>
             <a href="#projetos8" id="projetos1">Projetos</a>
             <a href="#email3"><button id="contato1">Contato</button></a>
             <button id="MudarCor" onclick="MudarTema()">Versão clara</button>
@@ -34,77 +38,279 @@
         
       </div>
 
-      <div id="principal">
-      <section id="sobre" class="card">
-        <h2 id="ola">Olá, eu sou</h2>
-        <h1><span id="destaque2">Amanda Rodrigues de Siqueira</span></h1>
-        <p><span class="destaque">Desenvolvedora full-stack</span></p>
-      </section>
-    </div>
+            <div id="principal">
+            <section id="sobre">
+                <div class="intro">
+                    <div class="intro-text">
+                        <div id="typed-wrapper">
+                        <h1 id="typed">Amanda Rodrigues</h1>
+                        </div>
+
+                        <p><span class="destaque6">Desenvolvedora full-stack</span></p>
+                        
+
+                        <div id="botões">
+                        <button id="cnt">Projetos</button>
+                        <button id="cnt1">Contato</button>
+                        </div>
+
+                        <div id="icons">
+        <a href="https://github.com/48984228328Aninha"><img src="./imagens/githubicon.png" alt="Ícone do GitHub" class="icon1" id="github"></a>
+        
+        
+        <a href="www.linkedin.com/in/amanda-rodrigues-rds"><img src="./imagens/linkedinicon.png" alt="Ícone do LinkedIn" class="icon2" id="linkedin"></a>
+                        </div>
+                        
+                    </div>
+
+                    
 
 
-    <section id="contato">
-      
-        <a href="https://github.com/48984228328Aninha">GitHub</a>
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Ícone do GitHub" class="icon" id="github">
-        
-        <a href="https://www.linkedin.com/in/seu-perfil/">LinkedIn</a>
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="Ícone do LinkedIn" class="icon" id="linkedin">
-        
-    </section>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                    </div>
+                
+                </div>
+            </section>
+        </div>
+
+
+    
 
 
     <section id="corpo">
         
-      <div class="sobre-tec-container">
+
         
         <section id="sobremim">
-            <div id = "textsob" class="fade-in-right">Sobre mim</div>
-            <ul id="listasob">
+        <div id="textsob">Sobre mim</div>
+    </div>
 
-            <li>Olá! Me chamo Amanda e sou estudante de Tecnologia da Informação.</li><br>
-
-            <li>Apaixonada por criar projetos que misturam design criativo com funcionalidade real.</li><br>
-
-            <li>Experiência prática com HTML, CSS, JavaScript e Bootstrap.</li><br>
-
-            <li>Desenvolvimento de aplicações que consomem APIs, lidam com dados e trazem soluções simples para problemas do dia a dia.</li><br>
-
-            <li>Experiência com criação de servidores, telas de login, chatbots em Python e pequenos sistemas com banco de dados.</li><br>
-
-            <li>Interesse em front-end, back-end e segurança.</li><br>
-
-            <li>Sempre em busca de novos conhecimentos, aprendendo com cada projeto, erro e desafio.</li><br>
-        </ul>
-        </section>
+    <div class="conteudo-sobremim">
+        <div class="texto-sobremim">
+            <div id="listasob">
+                <h1 id="favor">Usando a tecnologia a nosso favor</h1>
+                <p>Sempre fui fascinada por tecnologia. Comecei explorando HTML, CSS e JavaScript, 
+                    criando pequenos projetos e aprendendo na prática. Com o tempo, me aprofundei em Java e Spring Boot, 
+                    desenvolvendo aplicações completas que conectam front-end e back-end. Adoro desafios e construir soluções 
+                    que unem criatividade e funcionalidade, sempre aprendendo algo novo a cada projeto.</p>
+            
+            <div id="container-cards">
+            <div id="card1">
+                <h3 id="titulo1">Aprender</h3>
+                <p id="tamanho1">Estou sempre estudando novas tecnologias para evoluir como desenvolvedora.</p>
+            
+            </div>
+            <div id="card2">
+                 <h3 id="titulo2">Projetos Práticos</h3>
+                <p id="tamanho2">Gosto de colocar em prática o que aprendo, criando aplicações reais.</p>
+            
+            </div>
+            <div id="card3">
+                <h3 id="titulo3">Segurança</h3>
+                <p id="tamanho3">Prezo por códigos seguros, limpos e eficientes, aplicando boas práticas de programação.</p>
+            </div>
+        </div>
+            
+                </div>
+        </div>
         
-        <section id="minhafoto">
+
+        <div id="minhafoto">
             <img src="https://avatars.githubusercontent.com/u/180871656?v=4" alt="Imagem de perfil" id="perfil">
-        </section>
         </div>
 
-</section>
-        
-        
-   <section id=crp>
-    <h1>Tecnologias</h1>
-    </section> 
+    </div>
 
-    
-    <div id="tecnologia">
-  <div class="scroll">
-    <!-- Grupo original -->
-    <img id="html" src="./shtml.png" alt="html">
-    <img id="css" src="./css.png" alt="css">
-    <img id="js" src="./js.png" alt="js">
-    <img src="./bootstrap.png" alt="bootstrap">
-    <img src="./nodejs.png" alt="node">
-    <img src="./mongodb.png" alt="mongo">
+    <h1 id="tituloFormacao">Formação <span id="academica">acadêmica</span></h1>
+    <div id="cardsFormacao">
+
+    <div id="formacao2">
+        <div id="textoFormacao">
+        <h1 id="curso">Ciência da Computação</h1>
+        <p id="faculdade">Unisul</p>
+        <p id="data">02/2024 - 12/2028</p>
+        <p id="desc">Focado em orientação a objetos com Java, conexão com banco de dados e estrutura de dados.</p>
+        </div>
+    </div>
+
+    <div id="formacao3">
+        <h1 id="ensinoMedio">Ensino médio</h1>
+        <p id="data2">01/2022 - 12/2024</p>
+        <p id="desc2">Formação ensino médio</p>
+    </div>
+</div>
+
+</section>
+
+<h1 id="tituloExperiencia">Experiência</h1>
+<div id="experiencia">
+
+    <div id="experiencia1">
+        <div id="textoExperiencia">
+        <h1 id="cargo">Jovem <span id="aprendiz">Aprendiz</span></h1>
+        <h3 id="milium">Milium<span id="miliu"> Palhoça, SC</span></h3>
+        <p id="data1">08/2024 - Atualmente</p>
+        <p id="descEmprego">Atualmente faço a emissão de notas fiscais utilizando o sistema SAP, atendimento ao 
+        cliente, reposição de produtos e apoio no processo de devoluções. </p>
+        <p id="conquista1">Principais conquistas</p>
+        <ul id="lista">
+            <li>Colaborei com colegas para manter o ambiente de trabalho fluido e focado nos objetivos 
+            diários. </li>
+            <li>Aprendi a utilizar o sistema SAP de forma eficiente, contribuindo para a agilidade nos processos.</li>
+            <li>Recebi feedback positivo de supervisores pela qualidade do meu atendimento ao cliente.</li>
+        </ul>
+        
+        <div id="progressos">
+
+        <div id="posicao1">
+        <p id="nivel1">Atendimento</p>
+        <div id="progress-container"></div>
+        </div>
+
+        <div id="posicao">
+        <p id="nivel">SAP</p>
+        <div id="progress-container1"></div>
+        </div>
+
+        <div id="posicao2">
+        <p id="nivel2">Comunicação</p>
+        <div id="progress-container2"></div>
+        </div>
+        </div>
+        
 
     </div>
+
+    <div id="experiencia2">
+        <div id="textoExperiencia2">
+        <h1 id="ensinoMedio">Projeto de extensão</h1>
+        <p id="tituloExtensao">Unisul<span id="unisul"> Palhoça, SC</span></p>
+        <p id="data2">03/2025 - 07/2025</p>
+        <p id="desc2">Realizei levantamento das demandas da empresa, diagnostiquei os pontos a melhorar e 
+apresentei uma solução prática</p>
+<p id="conquista2">Principais conquistas</p>
+        <ul id="desc3"> 
+            <li id="implementacao">Implementei o uso do WhatsApp Business para 
+            facilitar o contato e atendimento aos clientes, melhorando a eficiência do processo.</li>
+            <li id="what">A empresa passou a utilizar o WhatsApp Business, melhorando a comunicação em 60% 
+com seus clientes e fortalecendo sua presença digital. </li>
+        </ul>
+
+        <div id="progresso">
+
+        <div id="posicau1">
+        <p id="nible1">Análise</p>
+        <div id="progress-container6"></div>
+        </div>
+
+        <div id="posicau2">
+        <p id="nible2">WhatsApp</p>
+        <div id="progress-container7"></div>
+        </div>
+
+        <div id="posicau3">
+        <p id="nible3">Requisitos</p>
+        <div id="progress-container8"></div>
+        </div>
+        </div>
+</div>
+    </div>
+</div>
+</div>
+
+
+    <h1 id="tituloTec">Tecnologias</h1>
+   
+    
+    <div id="tecnologia">
+  <div class="cardsTec">
+
+    <div id="nomeTec">
+        <p>Java</p>
+        <img id="java" src="./imagens/java.png" alt="java">
+
+        </div>
+
+        <div id="Springbut">
+        <p>SpringBoot</p>
+        <img id="springboot" src="./imagens/icons8-logotipo-da-primavera-48.png" alt="spring">
+        </div>
+
+        <div id="sqle">
+        <p>SQL</p>
+        <img id="sql1"src="./imagens/servidor-sql.png" alt="sql">
+        </div>
+
+        <div id="htlm">
+        <p>HTML</p>
+        <img id="html" src="./imagens/arquivo-html.png" alt="html">
+        </div>
+
+        <div id="cis">
+        <p>CSS</p>
+        <img id="css" src="./imagens/css (1).png" alt="css">
+        </div>
+
+        <div id="jse">
+        <p>JavaScript</p>
+        <img id="js" src="./imagens/javascript.png" alt="js">
+        </div>
+        
+        <div id="postgri">
+        <p>PostgreeSQL</p>
+        <img id="postgre" src="./imagens/postgre.png" alt="postgree">
+        </div>
+
+        <div id="mungu">
+        <p>MongoDB</p>
+        <img id="mongo" src="./imagens/icons8-mongo-db-64.png" alt="mongo">
+        </div>
+
   </div>
   </div>
 </section>
+
+<div id="competencias">
+
+    <div id="front">
+        <div id="frontzin">
+        <h1 id="frunt">Front-end</h1>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Angular</p>
+        </div>
+    </div>
+
+
+    <div id="back">
+        <div id="backzin">
+        <h1 id="bacus">Back-end</h1>
+        <p>Java</p>
+        <p>Spring Boot</p>
+        <p>PostgreeSQL</p>
+        <p>MongoDB</p>
+        </div>
+
+    </div>
+
+    <div id="Tools">
+        <div id="tooles">
+        <h1 id="tuts">Tools</h1>
+        <p>NetBeans</p>
+        <p>GitHub</p>
+        <p>Vs Code</p>
+        <p>Git</p>
+        </div>
+
+    </div>
+    </div>
+
+</div>
 
         
        </section>
