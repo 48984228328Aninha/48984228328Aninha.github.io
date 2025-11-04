@@ -1,40 +1,98 @@
-const scroll = document.querySelector('.scroll');
-const images = scroll.querySelectorAll('img');
-
-// Calcula a largura total do **primeiro grupo**
-let totalWidth = 0;
-for (let i = 0; i < images.length / 2; i++) {
-  totalWidth += images[i].offsetWidth;
+var progress = new ProgressBar.Circle('#progress-container', {
+    color: '#9f7be7',         // cor da barra
+  strokeWidth: 10,           // largura da barra
+  trailWidth: 10,            // largura da trilha (fundo)
+  trailColor: '#eee',       // cor da trilha
+  duration: 2000,           // duração da animação em ms
+  easing: 'easeInOut'
+});
+function updateProgressText(state, circle) {
+      // Atualiza o texto conforme o progresso
+      circle.setText(Math.round(circle.value() * 100) + '%');
 }
+progress.animate(0.75, {
+  step: updateProgressText
+});
 
-// Define a variável CSS para a animação
-scroll.style.setProperty('--scroll-width', `${totalWidth}px`);
-
-function MudarTema() {
-  document.getElementById("MudarCor").onclick = MudarTemaEscuro;
-  document.getElementById("MudarCor").innerHTML = "Versão escura";
-  document.body.style.backgroundImage = "url('escuro.jpg')";
-
+var progress1 = new ProgressBar.Circle('#progress-container1', {
+    color: '#9f7be7',         // cor da barra
+  strokeWidth: 10,           // largura da barra
+  trailWidth: 10,            // largura da trilha (fundo)
+  trailColor: '#eee',       // cor da trilha
+  duration: 2000,           // duração da animação em ms
+  easing: 'easeInOut'
+});
+function updateProgressText(state, circle) {
+      // Atualiza o texto conforme o progresso
+      circle.setText(Math.round(circle.value() * 100) + '%');
 }
+progress1.animate(0.80, {
+  step: updateProgressText
+});
 
-function MudarTemaEscuro() {
-  document.getElementById("MudarCor").onclick = MudarTema;
-  document.getElementById("MudarCor").innerHTML = "Versão clara";
-  document.body.style.backgroundImage = "url('https://images.unsplash.com/photo-1638272181967-7d3772a91265?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fG15c3RpYyUyMHB1cnBsZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D')";
+var progress2 = new ProgressBar.Circle('#progress-container2', {
+    color: '#9f7be7',         // cor da barra
+  strokeWidth: 10,           // largura da barra
+  trailWidth: 10,            // largura da trilha (fundo)
+  trailColor: '#eee',       // cor da trilha
+  duration: 2000,           // duração da animação em ms
+  easing: 'easeInOut'
+});
+function updateProgressText(state, circle) {
+      // Atualiza o texto conforme o progresso
+      circle.setText(Math.round(circle.value() * 100) + '%');
 }
+progress2.animate(0.90, {
+  step: updateProgressText
+});
 
-// Fade-in lateral ao rolar (scroll)
-function fadeSobre() {
-  const sobreSection = document.getElementById('sobre');
-  if (!sobreSection) return;
-  const fadeElements = sobreSection.querySelectorAll('.fade-in-left, .fade-in-right');
-  fadeElements.forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 40) {
-      el.style.animationPlayState = 'running';
-    }
-  });
+var progresso = new ProgressBar.Circle('#progress-container6', {
+    color: '#9f7be7',         // cor da barra
+  strokeWidth: 10,           // largura da barra
+  trailWidth: 10,            // largura da trilha (fundo)
+  trailColor: '#eee',       // cor da trilha
+  duration: 2000,           // duração da animação em ms
+  easing: 'easeInOut'
+});
+function updateProgressText(state, circle) {
+      // Atualiza o texto conforme o progresso
+      circle.setText(Math.round(circle.value() * 100) + '%');
 }
+progresso.animate(0.75, {
+  step: updateProgressText
+});
+var progresso1 = new ProgressBar.Circle('#progress-container7', {
+    color: '#9f7be7',         // cor da barra
+  strokeWidth: 10,           // largura da barra
+  trailWidth: 10,            // largura da trilha (fundo)
+  trailColor: '#eee',       // cor da trilha
+  duration: 2000,           // duração da animação em ms
+  easing: 'easeInOut'
+});
+function updateProgressText(state, circle) {
+      // Atualiza o texto conforme o progresso
+      circle.setText(Math.round(circle.value() * 100) + '%');
+}
+progresso1.animate(0.75, {
+  step: updateProgressText
+});
 
-window.addEventListener('scroll', fadeSobre);
-window.addEventListener('DOMContentLoaded', fadeSobre);
+var progresso2 = new ProgressBar.Circle('#progress-container8', {
+    color: '#9f7be7',         // cor da barra
+  strokeWidth: 10,           // largura da barra
+  trailWidth: 10,            // largura da trilha (fundo)
+  trailColor: '#eee',       // cor da trilha
+  duration: 2000,           // duração da animação em ms
+  easing: 'easeInOut'
+});
+function updateProgressText(state, circle) {
+      // Atualiza o texto conforme o progresso
+      circle.setText(Math.round(circle.value() * 100) + '%');
+}
+progresso2.animate(0.75, {
+  step: updateProgressText
+});
+    
+
+
+
